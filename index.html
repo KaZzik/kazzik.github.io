@@ -1,7 +1,3 @@
-<?php
-    //  вся процедура работает на сессиях. Именно в ней хранятся данные  пользователя, пока он находится на сайте. Очень важно запустить их в  самом начале странички!!!
-    session_start();
-    ?>
     <!DOCTYPE html>
     <html>
     <head>
@@ -43,53 +39,13 @@
 <a href="reg.php">Зарегистрироваться</a> 
     </p></form>
     <br>
-    <?php
-    // Проверяем, пусты ли переменные логина и id пользователя
-    if (empty($_SESSION['login']) or empty($_SESSION['id']))
-    {
-    // Если пусты, то мы не выводим ссылку
-    echo "Вы вошли на сайт, как гость<br><a href='#'>Эта ссылка  доступна только зарегистрированным пользователям</a>";
-    }
-    else
-    {
-
-    // Если не пусты, то мы выводим ссылку
-    echo "Вы вошли на сайт, как ".$_SESSION['login']."<br><a  href='content/1.php'>Начать обучение!</a>";
-    }
-    ?><br>
+   <br>
     <p><a href="mailto:kazzick@mail.ru?subject=Вопрос по HTML">Задавайте
   вопросы по электронной почте разработчика</a></p>
     Учреждение образования
     "Новополоцкий государственный профессионально-технический колледж строителей"
 
-    <?php
-  $filename = "form.txt"; //Имя файла для прикрепления
-  $to = "kazzick@mail.ru"; //Кому
-  $from = "kazzick@mail.ru"; //От кого
-  $subject = "Test"; //Тема
-  $message = "Текстовое сообщение"; //Текст письма
-  $boundary = "---"; //Разделитель
-  /* Заголовки */
-  $headers = "From: $from\nReply-To: $from\n";
-  $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"";
-  $body = "--$boundary\n";
-  /* Присоединяем текстовое сообщение */
-  $body .= "Content-type: text/html; charset='utf-8'\n";
-  $body .= "Content-Transfer-Encoding: quoted-printablenn";
-  $body .= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode($filename)."?=\n\n";
-  $body .= $message."\n";
-  $body .= "--$boundary\n";
-  $file = fopen($filename, "r"); //Открываем файл
-  $text = fread($file, filesize($filename)); //Считываем весь файл
-  fclose($file); //Закрываем файл
-  /* Добавляем тип содержимого, кодируем текст файла и добавляем в тело письма */
-  $body .= "Content-Type: application/octet-stream; name==?utf-8?B?".base64_encode($filename)."?=\n"; 
-  $body .= "Content-Transfer-Encoding: base64\n";
-  $body .= "Content-Disposition: attachment; filename==?utf-8?B?".base64_encode($filename)."?=\n\n";
-  $body .= chunk_split(base64_encode($text))."\n";
-  $body .= "--".$boundary ."--\n";
-  mail($to, $subject, $body, $headers); //Отправляем письмо
-?>
+   
     
    </div>
     </body>
