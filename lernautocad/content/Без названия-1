@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 !DOCTYPE html>
 <html>
 <head>
@@ -51,4 +52,59 @@
                  </ul>
                 </li>
             </ul>
+=======
+!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" lang="ru">
+<link rel="stylesheet" type="text/css" href="css\1.css">
+	<title>Понятие графических примитивов</title>	 
+</head>
+<body >
+<nav class="bl">
+            <ul id="nav">
+            <li><a href="index.html">Главная страница</a></li>
+                <li class="glav"><a >Построение простых графических примитивов</a>
+                    <ul class="glav2">
+                      <li><a href="1.html">Понятие графических примитивов</a></li>
+                      <li><a href="4.html">Построение точек</a></li>
+                      <li><a href="4-1.html">Построение отрезков</a></li>
+                      <li><a href="4-2.html">Построение прямых</a></li>
+                      <li><a href="4-3.html">Построение прямоугольников</a></li>
+                      <li><a href="2.html">Построение многоугольников</a></li>
+                      <li><a href="3.html">Построение окружностей</a></li>
+                      <li><a href="3-1.html">Построение дуг</a></li>
+                      <li><a href="3-2.html">Построение эллипсов</a></li>
+                      <li><a href="3-3.html">Задание 1</a></li>
+                      <li><a href="4-4.html">Задание 2</a></li>
+                      <li><a href="10.html">Тест по теме &quot;Постраение простых примитивов&quot;</a></li>
+                    </ul>
+                </li>
+                <li class="glav"><a>Построение сложных примитивов</a>
+                    <ul class="glav2">
+                      <li><a href="5.html">Построение сплайнов</a></li>
+                      <li><a href="5-1.html">Построение полилиний</a></li>
+                      <li><a href="5-2.html">Построение мультилиний</a></li>
+                      <li><a href="11.html">Тест по теме &quot;Построение сложных примитивов&quot;</a></li>
+                    </ul>
+                </li>
+                <li class="glav"><a>Редактирование и изменение объектов</a>
+                  <ul class="glav2">
+                      <li><a href="6.html">Удаление объектов. Отмена действий</a></li>
+                      <li><a href="9.html">Назначение команд редактирования</a></li>
+                      <li><a href="7.html">Копирование</a></li>
+                      <li><a href="7-1.html">Перемещение</a></li>
+                      <li><a href="7-2.html">Поворот</a></li>
+                      <li><a href="7-3.html">Зеркальное отображение</a></li>           
+                      <li><a href="8.html">Создание массивов</a></li>
+                      <li><a href="8-1.html">Масштабирование</a></li>
+                      <li><a href="8-2.html">Обрезка</a></li>
+                      <li><a href="8-3.html">Фаска</a></li>
+                      <li><a href="8-4.html">Сопряжение</a></li>
+                      <li><a href="7-4.html">Задания</a></li>
+                      <li><a href="12.html">Тест по теме &quot;Редактирование и изменению обьектов&quot;</a></li>
+                 </ul>
+                </li>
+            </ul>
+>>>>>>> d146ca0fddb126a0a47e430714ddddabea58ad99
 </nav>

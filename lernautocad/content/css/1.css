@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .my-logo{position:fixed;bottom:0;left:0;margin:0;padding:0;}.my-logo__pic{border:0;vertical-align:middle;}
 body{  margin: 0;  padding: 0;  font: 1em/1.4em sans-serif; background: linear-gradient(to top, #36585e 50%, #2f4852 50%); }
 a{text-decoration: none;}
@@ -34,3 +35,41 @@ content p:first-child {font-size: 150%; font-weight: bolder;}
 #click{padding: 30px 30px 30px; align-content: center;text-align: center;border:20px; margin: 20px; border-color: blue;background-color: blue;}
 .content1 a{font-size: 18pt;  color: black; }
 .content1 a:hover{font-size: 18pt;  color: white; text-shadow: 0px 0px 20px black,2px 2px 20px  #2f4852,1px 1px 20px #666; transition: 0.5s;}
+=======
+.my-logo{position:fixed;bottom:0;left:0;margin:0;padding:0;}.my-logo__pic{border:0;vertical-align:middle;}
+body{  margin: 0;  padding: 0;  font: 1em/1.4em sans-serif; background: linear-gradient(to top, #36585e 50%, #2f4852 50%); }
+a{text-decoration: none;}
+ul{  margin: 0;  padding: 0;  list-style: none;}
+
+/*Оформление меню*/
+.side{  width: 200px;  margin: 20px; font: menu; position: fixed;}
+.menu a{  background: #2f4852;  color: #fff;  padding: 5px 10px 5px 10px;  display: block;  border-bottom: 1px solid #666;  -webkit-transition: 0.5s all;  transition: 0.5s all; box-shadow: black 5px 5px 10px;}
+.menu a:hover{  background: #666;  padding: 10px 0 10px 20px;}
+.menu li:first-child a, 
+.menu li .menu__drop li:first-child a{  border-radius: 5px 5px 0 0;}
+.menu li:last-child a, 
+.menu li .menu__drop li:last-child a{  border-radius:0 0 5px 5px;  border-bottom: 0;}
+.menu li .menu__drop li a{  border-radius: 0;  border-bottom: 1px solid #666;}
+.menu__list{  position: relative;}
+.menu__drop{  position: absolute;  width: 100%;  left: 100%;  top:-9999em;  opacity: 0;  border-left: 10px solid transparent;  -webkit-transition: 0.5s opacity;  transition: 0.5s opacity;}
+.menu__list:hover .menu__drop{  opacity: 1;  top: 0;}
+.menu__list::after{  content: " ";  position: absolute;  border: 5px solid;  border-color: transparent transparent transparent #eee;  top: 1em;  right: 0.7em;  -webkit-transition: 0.5s;
+  transition: 0.5s;}
+.menu__list:hover::after{  -webkit-transform: scaleX(-1);  -ms-transform: scaleX(-1);  transform: scaleX(-1);}
+content {position: absolute; font-family: georgia; font-size: 14pt; text-shadow: black 0px 0px 1px; left: 17%; width: 80%; background: linear-gradient(to top left, #b9dbe6, #2f4852); padding: 15px; box-shadow: 2px 0px 20px 2px #fff; z-index: -1;}
+content img{max-width: 80%;}
+content img:hover{max-width: 80%; border-radius: 10px; transition: 0.5s;width: 200%; box-shadow: black 0px 0px 100px; transition: 0.5s;}
+#head  {position: relative; background-image: url(top.png) repeat-x; font-family: sans-serif; vertical-align: midle; font-size: 200%; font-weight:lighter; 
+ color: white; z-index: auto; text-shadow: 0px 0px 10px white,2px 2px 20px  #2f4852,1px 1px 30px black;}
+#head img{ height: 15%; right: 20px;}
+#head p{ text-align:  center; vertical-align: top;}
+content a{font-size: 18pt;  color: black; }
+content a:hover{font-size: 18pt;  color: white; text-shadow: 0px 0px 20px black,2px 2px 20px  #2f4852,1px 1px 20px #666; transition: 0.5s;}
+content p:first-child {font-size: 150%; font-weight: bolder;}
+#l1 {position: absolute; left: 10%; top:0%;}
+#l1 img{width: 170%; height: 170%;}
+.content1{color: white; background-color: black;  opacity: 0.5; text-shadow: black 0px 0px 10px; box-shadow: black 0px 0px 10px; position: absolute;  max-width: 60%; text-align-last:  center; text-align: center; margin:00% 20% 0% 20%;}
+#click{padding: 30px 30px 30px; align-content: center;text-align: center;border:20px; margin: 20px; border-color: blue;background-color: blue;}
+.content1 a{font-size: 18pt;  color: black; }
+.content1 a:hover{font-size: 18pt;  color: white; text-shadow: 0px 0px 20px black,2px 2px 20px  #2f4852,1px 1px 20px #666; transition: 0.5s;}
+>>>>>>> d146ca0fddb126a0a47e430714ddddabea58ad99
